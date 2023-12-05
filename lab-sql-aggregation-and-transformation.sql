@@ -67,8 +67,4 @@ group by rating
 having average_duration >= 120;
 
 -- Bonus: determine which last names are not repeated in the table actor.
-select last_name from actor
-group by last_name
-having count(last_name) = 1;
-
-
+select distinct last_name from actor;
